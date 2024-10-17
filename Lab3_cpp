@@ -1,0 +1,53 @@
+#include <iostream>
+
+#include <cmath>
+
+using namespace std;
+
+int main(){
+
+int n;
+
+cout<<"Enter number (n) : ";
+
+cin>>n;
+
+if(n<2){
+
+cout<<"Eror: number 'n' must = or > 2"<<endl;
+
+return 1;
+
+}
+
+cout<<"prime number ("<<n<<"): "<<endl;
+
+for(int i = 2;i <= n; ++i ) {
+
+bool prime=true;
+
+for(int j=2;j*j<=j;++j){
+
+if(i%j==0){
+
+prime=false;
+
+break;
+
+}
+
+}
+
+if(prime){
+
+cout<<i<<" ; ";
+
+}
+
+}
+
+cout<<endl;
+
+return 0;
+
+}
